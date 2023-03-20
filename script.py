@@ -1,6 +1,7 @@
 import sys
 import os
 import openai
+import pyperclip
 
 def get_api_key(var):
     key = os.environ.get(var)
@@ -33,5 +34,6 @@ while True:
 
     generated_text = response.choices[0].text.strip()
     print(generated_text)
+    pyperclip.copy(generated_text)
 
 sys.exit()
