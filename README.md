@@ -9,7 +9,7 @@ Cotinue to install the necessary libraries by running:
 ````bash
 pip install -r requirements.txt
 ````
-Make sure to set your API key as a environment variable called OPENAI_KEY. This serves for confidentiality reasons. In order to generate a API key visit [this link](https://platform.openai.com/account/api-keys). To set a environment variable (depedning on your shell) write to .zshcr or .bashcr file. Run `nano ~/.zshrc` to open the editor and then export your API key:
+Make sure to set your API key as a environment variable called OPENAI_KEY. This serves for confidentiality reasons. In order to generate a API key visit [this link](https://platform.openai.com/account/api-keys). To set a environment variable (depedning on your shell) write to .zshrc or .bashrc file. Run `nano ~/.zshrc` to open the editor and then export your API key:
 
 ````bash
 export OPENAI_KEY='INSERT_YOUR_KEY_HERE'
@@ -17,7 +17,7 @@ export OPENAI_KEY='INSERT_YOUR_KEY_HERE'
 
 Make sure to save the changes with control + o to write to the file and press enter to confirm. Exit the editor with control + x. To execute the content of the file run `source ~/.zshrc`.
 
-At this stage you will be able to run the script within your directory. If you wish to create an alias in order to run your script from anywhere in your terminal you need to make another change to the .zshcr file (or .bashcr depending on your shell). To do this open the text editor again using `nano ~/.zshrc` and create an alias by typing:
+At this stage you will be able to run the script within your directory. If you wish to create an alias in order to run your script from anywhere in your terminal you need to make another change to the .zshrc file (or .bashrc depending on your shell). To do this open the text editor again using `nano ~/.zshrc` and create an alias by typing:
 
 ````bash
 alias chatgpt='python3 PATH/TO/YOUR/SCRIPT.py'
