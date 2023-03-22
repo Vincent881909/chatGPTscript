@@ -3,7 +3,7 @@ A straight-forward python script to communicate with openAI API to retrieve resp
 
 ## Install
 
-In order to use this program make sure to pull this repository into your desired directory using `gh repo pull Vincent881909/chatGPTscript`.
+In order to use this program make sure to pull this repository into your desired directory using `gh repo clone Vincent881909/chatGPTscript`.
 Cotinue to install the necessary libraries by running:
 
 ````bash
