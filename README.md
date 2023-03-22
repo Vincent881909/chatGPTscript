@@ -1,5 +1,5 @@
 # chatGPTscript
-A straight-forward python script to communicate with openAI API to retrieve responses from their text-davinci-003 model.
+A straight-forward python script to communicate with openAI API using a command line interface to retrieve responses from the text-davinci-003 model.
 
 ## Install
 
