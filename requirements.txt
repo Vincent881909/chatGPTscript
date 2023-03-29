@@ -1,2 +1,2 @@
-openai
-pyperclip
+openai==0.27.2
+pyperclip==1.8.2

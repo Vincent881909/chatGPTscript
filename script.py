@@ -11,18 +11,17 @@ def get_api_key(var):
 
 def concatenate_strings(strings):
     strings = strings[1:]
-    
     concatenated_string = " ".join(strings)
-
     return concatenated_string
 
 openai.api_key = get_api_key("OPENAI_KEY")
 
+# Change these settings specific to your use case
 model_engine = "text-davinci-003"
-temperature = 0.7
-max_tokens = 200
+temperature = 0.5
+max_tokens = 150
 
-def api_call(user_input):
+def chatGPT_API(user_input):
     response = openai.Completion.create(
         engine = model_engine,
         prompt = user_input,
@@ -38,8 +37,8 @@ def api_call(user_input):
 
 
 if (len(sys.argv) > 1):
-    prompt = concatenate_strings(sys.argv)
-    generated_text = api_call(prompt)
+    user_input = concatenate_strings(sys.argv)
+    generated_text = chatGPT_API(user_input)
     print(generated_text)
     pyperclip.copy(generated_text)
     sys.exit()
@@ -51,8 +50,7 @@ while True:
     if user_input == "q":
         break
 
-    generated_text = api_call(user_input.strip())
-
+    generated_text = chatGPT_API(user_input.strip())
     print(generated_text)
     pyperclip.copy(generated_text)
 
